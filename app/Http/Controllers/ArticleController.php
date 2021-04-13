@@ -68,9 +68,10 @@ class ArticleController extends Controller
      * @param  \App\Models\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function edit(Article $article)
+    public function edit($id)
     {
-        //
+        $article = Article::find($id);
+        return view('articles.edit', ['article'=>$article]);
     }
 
     /**
