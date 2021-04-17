@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf']);
+
+Route::resource('mahasiswa', MahasiswaController::class);
+
+Route::get('/search', [MahasiswaController::class, 'search']);
