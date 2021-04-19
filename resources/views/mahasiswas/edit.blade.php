@@ -57,6 +57,11 @@
                <br>
                <input type="Tanggal_Lahir" name="Tanggal_Lahir" class="form-control" id="Tanggal_Lahir" aria-describedby="Tanggal_Lahir" >
                </div>
+            <div class="form-group">
+               <label for="image">Edit Foto</label>
+               <br>
+               <input type="file" class="form-control" required="required" name="upload"></br>
+               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
             </form>
          </div>

@@ -14,6 +14,7 @@
          <li class="list-group-item"><b>No_Handphone: </b>{{$Mahasiswa->no_handphone}}</li>
          <li class="list-group-item"><b>E-mail: </b>{{$Mahasiswa->email}}</li>
          <li class="list-group-item"><b>Tanggal_Lahir: </b>{{$Mahasiswa->tanggal_lahir}}</li>
+         <li class="list-group-item"><b>Foto: </b>{{$Mahasiswa->image}}</li>
 
          </ul>
       </div>
