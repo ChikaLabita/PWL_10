@@ -31,3 +31,5 @@ Route::get('/article/cetak_pdf', [ArticleController::class, 'cetak_pdf']);
 Route::resource('mahasiswa', MahasiswaController::class);
 
 Route::get('/search', [MahasiswaController::class, 'search']);
+
+Route::get('/nilai', [MahasiswaController::class, 'nilai']);
